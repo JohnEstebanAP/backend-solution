@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import java.util.function.Function;
 
 @Component
-public class AnsmerMapper {
+public class AnswerMapper {
 
     public Function<Answer, AnswerDTO> fromAnswerDTO(){
         return entity ->
