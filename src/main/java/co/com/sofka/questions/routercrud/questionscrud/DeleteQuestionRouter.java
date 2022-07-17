@@ -17,7 +17,7 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.r
 public class DeleteQuestionRouter {
     @Bean
     public RouterFunction<ServerResponse> deleteQuestion(DeleteQuestionUseCase deleteUseCase) {
-        return route(DELETE("/eliminar/{id}").and(accept(MediaType.APPLICATION_JSON)),
+        return route(DELETE("/delete/question/{id}").and(accept(MediaType.APPLICATION_JSON)),
                 request ->
                         ServerResponse.ok()
                                 .contentType(MediaType.APPLICATION_JSON)
