@@ -2,9 +2,11 @@ package co.com.sofka.questions.mapper;
 
 import co.com.sofka.questions.collections.Question;
 import co.com.sofka.questions.model.QuestionDTO;
+import org.springframework.stereotype.Component;
 
 import java.util.function.Function;
 
+@Component
 public class QuestionMapper {
 
     //Funcion para convertir de QuestionDto a question
